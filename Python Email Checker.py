@@ -20,7 +20,7 @@ time.sleep(1.5)
 
 if newmail_count > NEWMAIL_OFFSET:
     time.sleep(0.5)
-    if newmail_count < 1:
+    if newmail_count > 1:
         print("You have " + str(newmail_count) + " unread emails!")
     else:
         print("You have " + str(newmail_count) + " unread email!")
